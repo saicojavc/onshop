@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.saico.onshop"
+    namespace =  "com.saico.onshop"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -67,8 +67,9 @@ android {
 }
 
 dependencies {
-//    implementation(project(":core:ui"))
-//    implementation(project(":feature:home"))
+//    implementation(project(":core"))
+    implementation(project(":core:ui"))
+    implementation(project(":feature:login"))
     implementation(libs.androidx.lifecycle.runtime.compose.android)
     implementation(libs.androidx.navigation.common.ktx)
     coreLibraryDesugaring(libs.com.android.tools.desugar)

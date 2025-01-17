@@ -21,4 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "onshop"
 include(":app")
- 
+include(":feature")
+
+include(":core")
+include(":core:ui")
+include(":feature:login")

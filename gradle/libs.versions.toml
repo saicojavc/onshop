@@ -20,7 +20,7 @@ android-navigation-compose = "2.8.5"
 #config
 compileSdk = "35"
 targetSdk = "34"
-minSdk = "23"
+minSdk = "26"
 lifecycleRuntimeComposeAndroid = "2.8.7"
 transportationConsumer = "3.0.0"
 navigationCommonKtx = "2.8.3"
