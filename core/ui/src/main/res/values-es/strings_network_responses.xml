@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="http_error_generic">¡Ups! Algo salió mal. Por favor, inténtelo de nuevo más tarde.</string>
+
+    <string name="http_error_400">¡Ups! Algo salió mal. Por favor revisa tu entrada y vuelve a intentarlo..</string>
+    <string name="http_error_401">¡Ups! Acceso denegado. Por favor verifique sus credenciales e inténtelo nuevamente..</string>
+    <string name="http_error_402">¡Ups! Pago requerido. Por favor realice un pago para continuar.</string>
+    <string name="http_error_403">¡Ups! Acceso denegado. No tienes permiso para acceder a esta página.</string>
+    <string name="http_error_404">¡Ups! Página no encontrada. La página solicitada no pudo ser encontrada.</string>
+    <string name="http_error_405">¡Ups! Método no permitido. La acción solicitada no es compatible.</string>
+    <string name="http_error_406">¡Ups! Solicitud no aceptable. Por favor proporcione información válida.</string>
+    <string name="http_error_407">¡Ups! Autenticacion requerida. Por favor autentíquese para acceder a este recurso.</string>
+    <string name="http_error_408">¡Ups! Pide tiempo fuera. Tomó demasiado tiempo procesar su solicitud.</string>
+    <string name="http_error_409">¡Ups! Se produjo un conflicto. Hubo un conflicto con el estado actual.</string>
+    <string name="http_error_410">¡Ups! Lo sentimos, esta página ya no está disponible.</string>
+    <string name="http_error_411">¡Ups! Longitud requerida. Proporcione la longitud requerida.</string>
+    <string name="http_error_412">¡Ups! Condición previa Falló. El servidor no cumple con las condiciones requeridas.</string>
+    <string name="http_error_413">¡Ups! Solicitud demasiado grande. La solicitud es demasiado grande para procesarla.</string>
+    <string name="http_error_414">¡Ups! Solicitar URL demasiado larga. La URL es demasiado larga para procesarla.</string>
+    <string name="http_error_415">¡Ups! Tipo de medio no admitido. El servidor no admite el formato proporcionado.</string>
+    <string name="http_error_416">¡Ups! Rango solicitado no disponible. El rango solicitado no está disponible.</string>
+    <string name="http_error_417">¡Ups! La expectativa fracasó. El servidor no pudo cumplir con las expectativas.</string>
+    <string name="http_error_418">¡Ups! Soy una tetera. Este servidor no puede preparar café.</string>
+    <string name="http_error_421">¡Ups! Solicitud mal dirigida. El servidor no pudo entender la solicitud.</string>
+    <string name="http_error_422">¡Ups! Entidad inprocesable. El servidor no pudo procesar los datos proporcionados.</string>
+    <string name="http_error_423">¡Ups! Recurso bloqueado. El recurso solicitado no está disponible actualmente.</string>
+    <string name="http_error_424">¡Ups! Dependencia fallida. La solicitud falló debido a un recurso dependiente.</string>
+    <string name="http_error_426">¡Ups! Se requiere actualización. Actualice su aplicación para acceder a esta página.</string>
+    <string name="http_error_428">¡Ups! Condición previa requerida. Por favor cumpla las condiciones requeridas.</string>
+    <string name="http_error_429">¡Ups! Demasiadas solicitudes. Has alcanzado el límite de solicitudes. Por favor, inténtelo de nuevo más tarde.</string>
+    <string name="http_error_431">¡Ups! El encabezado de la solicitud es demasiado grande. Los encabezados de solicitud son demasiado grandes para procesarlos.</string>
+    <string name="http_error_451">¡Ups! Este recurso no está disponible por motivos legales.</string>
+
+    <string name="http_error_500">¡Ups! Algo salió mal en nuestro servidor. Por favor, inténtelo de nuevo más tarde.</string>
+    <string name="http_error_501">¡Ups! Esta característica no es compatible. Comuníquese con el soporte para obtener ayuda.</string>
+    <string name="http_error_502">¡Ups! Hay un problema con la conexión del servidor. Por favor, inténtelo de nuevo más tarde.</string>
+    <string name="http_error_503">¡Ups! Nuestro servidor se encuentra actualmente en mantenimiento. Por favor, inténtelo de nuevo más tarde.</string>
+    <string name="http_error_504">¡Ups! El servidor tardó demasiado en responder. Por favor, inténtelo de nuevo más tarde.</string>
+    <string name="http_error_505">¡Ups! Versión HTTP no compatible. Actualice su aplicación a la última versión.</string>
+    <string name="http_error_506">¡Ups! La variante también negocia. Pruebe con una opción diferente.</string>
+    <string name="http_error_507">¡Ups! Espacio insuficiente. Libere espacio e inténtelo de nuevo.</string>
+    <string name="http_error_508">¡Ups! Bucle detectado. Hay una referencia circular. Pruebe con una ruta diferente.</string>
+    <string name="http_error_510">¡Ups! No extendido. A esta solicitud le faltan las extensiones requeridas.</string>
+    <string name="http_error_511">¡Ups! Se requiere autenticación de red. Por favor autentíquese para acceder a este recurso.</string>
+
+</resources>

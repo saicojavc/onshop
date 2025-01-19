@@ -24,7 +24,7 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.saico.login.navigation.loginGraph
-import com.saico.onshop.navigation.Navigator
+import com.saico.onshop.ui.navigation.Navigator
 import com.saico.onshop.ui.theme.OnshopTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.delay

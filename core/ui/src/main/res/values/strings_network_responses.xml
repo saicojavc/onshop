@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="http_error_generic">Oops! Something went wrong. Please try again later.</string>
+
+    <string name="http_error_400">Oops! Something went wrong. Please check your input and try again.</string>
+    <string name="http_error_401">Oops! Access denied. Please check your credentials and try again.</string>
+    <string name="http_error_402">Oops! Payment required. Please make a payment to continue.</string>
+    <string name="http_error_403">Oops! Access denied. You\'re not allowed to access this page.</string>
+    <string name="http_error_404">Oops! Page not found. The requested page could not be found.</string>
+    <string name="http_error_405">Oops! Method not allowed. The requested action is not supported.</string>
+    <string name="http_error_406">Oops! Request not acceptable. Please provide valid information.</string>
+    <string name="http_error_407">Oops! Authentication required. Please authenticate to access this resource.</string>
+    <string name="http_error_408">Oops! Request timeout. It took too long to process your request.</string>
+    <string name="http_error_409">Oops! Conflict occurred. There was a conflict with the current state.</string>
+    <string name="http_error_410">Oops! Sorry, this page is no longer available.</string>
+    <string name="http_error_411">Oops! Length required. Please provide the required length.</string>
+    <string name="http_error_412">Oops! Precondition failed. The server does not meet the required conditions.</string>
+    <string name="http_error_413">Oops! Request too large. The request is too big to process.</string>
+    <string name="http_error_414">Oops! Request URL too long. The URL is too long to process.</string>
+    <string name="http_error_415">Oops! Unsupported media type. The server does not support the provided format.</string>
+    <string name="http_error_416">Oops! Requested range not available. The requested range is not available.</string>
+    <string name="http_error_417">Oops! Expectation failed. The server couldn\'t meet the expectations.</string>
+    <string name="http_error_418">Oops! I\'m a teapot. This server is not able to brew coffee.</string>
+    <string name="http_error_421">Oops! Misdirected request. The server couldn\'t understand the request.</string>
+    <string name="http_error_422">Oops! Unprocessable entity. The server couldn\'t process the provided data.</string>
+    <string name="http_error_423">Oops! Resource locked. The requested resource is currently unavailable.</string>
+    <string name="http_error_424">Oops! Failed dependency. The request failed due to a dependent resource.</string>
+    <string name="http_error_426">Oops! Upgrade required. Please upgrade your app to access this page.</string>
+    <string name="http_error_428">Oops! Precondition required. Please fulfill the required conditions.</string>
+    <string name="http_error_429">Oops! Too many requests. You\'ve reached the limit of requests. Please try again later.</string>
+    <string name="http_error_431">Oops! Request header too large. The request headers are too large to process.</string>
+    <string name="http_error_451">Oops! This resource is unavailable due to legal reasons.</string>
+
+    <string name="http_error_500">Oops! Something went wrong on our server. Please try again later.</string>
+    <string name="http_error_501">Oops! This feature is not supported. Please contact support for assistance.</string>
+    <string name="http_error_502">Oops! There\'s a problem with the server connection. Please try again later.</string>
+    <string name="http_error_503">Oops! Our server is currently undergoing maintenance. Please try again later.</string>
+    <string name="http_error_504">Oops! The server took too long to respond. Please try again later.</string>
+    <string name="http_error_505">Oops! HTTP version not supported. Please update your app to the latest version.</string>
+    <string name="http_error_506">Oops! Variant also negotiates. Please try a different option.</string>
+    <string name="http_error_507">Oops! Insufficient storage. Please free up some space and try again.</string>
+    <string name="http_error_508">Oops! Loop detected. There\'s a circular reference. Please try a different path.</string>
+    <string name="http_error_510">Oops! Not extended. This request is missing required extensions.</string>
+    <string name="http_error_511">Oops! Network authentication required. Please authenticate to access this resource.</string>
+
+</resources>

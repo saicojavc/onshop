@@ -28,6 +28,7 @@ android {
         }
     }
     compileOptions {
+        isCoreLibraryDesugaringEnabled = true
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
@@ -38,6 +39,8 @@ android {
 
 dependencies {
     implementation(project(":core:ui"))
+    implementation(project(":core:common"))
+    implementation(project(":core:model"))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

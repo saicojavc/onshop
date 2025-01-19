@@ -52,6 +52,7 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+        isCoreLibraryDesugaringEnabled = true
     }
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_17.toString()
@@ -67,8 +68,11 @@ android {
 }
 
 dependencies {
-//    implementation(project(":core"))
+    //Modules Core
+    implementation(project(":core:model"))
+    implementation(project(":core:common"))
     implementation(project(":core:ui"))
+    //Modules Feature
     implementation(project(":feature:login"))
     implementation(libs.androidx.lifecycle.runtime.compose.android)
     implementation(libs.androidx.navigation.common.ktx)

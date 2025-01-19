@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">JIT</string>
+    <string name="full_app_name">Just In Time</string>
+    <string name="app_version" translatable="false">0.0.1</string>
+    <string name="version">Version</string>
+    <string name="xetid" translatable="false">XETID</string>
+    <string name="year" translatable="false">2024</string>
+
+    <!--Greetings-->
+    <string name="welcome">Welcome</string>
+    <string name="greeting_morning_1">Good morning</string>
+    <string name="greeting_morning_2">Good morning</string>
+    <string name="greeting_afternoon_1">Good afternoon</string>
+    <string name="greeting_night_1">Good night</string>
+    <string name="greeting_1">Greetings</string>
+    <string name="greeting_2">Welcome</string>
+    <string name="greeting_3">Hello</string>
+    <string name="greeting_4">Nice to see you</string>
+    <string name="greeting_5">Hi, welcome back</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="base_login">Login</string>
+    <string name="home_screen">Home</string>
+    <string name="dashboard">My Works</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="search">Search</string>
+    <string name="create_offer_screen" translatable="false">Create Offer</string>
+    <string name="beneficiary_signature_screen">Beneficiary Signature</string>
+    <string name="remittent_signature_screen">Remittent Signature</string>
+    <string name="signature_screen">Transporter Signature</string>
+    <string name="request_detail_screen">Detail</string>
+    <string name="responsibility_screen">Responsibility</string>
+    <string name="with_login">Login with: </string>
+    <string name="idp_ez" translatable="false">ENZONA</string>
+    <string name="idp_gob" translatable="false">CUBAGOB</string>
+    <string name="hide_password">Hide password</string>
+    <string name="show_password">Show password</string>
+    <string name="avatar">avatar</string>
+    <string name="permission">permission</string>
+    <string name="responsibility">Responsibility</string>
+    <string name="onBack">back</string>
+
+    <string name="theme">Theme</string>
+    <string name="theme_description">Select the application theme</string>
+    <string name="remember_login">Security</string>
+    <string name="remember_login_description">Remember credentials at startup. Authentication will be requested only when your session expires.</string>
+    <string name="location_service">Localization service</string>
+    <string name="location_description">Enable the localization service.</string>
+    <string name="notification_service">Notification service</string>
+    <string name="notification_service_description">Enable the notification service.</string>
+    <string name="system_theme">System</string>
+    <string name="dark_theme">Dark</string>
+    <string name="light_theme">Light</string>
+    <string name="time_lapse">Time Lapse</string>
+    <string name="location">Location</string>
+
+    <string name="error">Error</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="eraser">Eraser</string>
+    <string name="done">Close</string>
+    <string name="save">Save</string>
+    <string name="understood">Understood</string>
+
+    <string name="change_log">Changelog</string>
+    <string name="follow_us">Follow us</string>
+    <string name="base_support_email" translatable="false">ticket@xetid.cu</string>
+    <string name="base_give_us_opinion">Give us opinion</string>
+    <string name="base_brief">Defense Information Technology Company.</string>
+
+    <string name="location_service_starter">Location service has started.</string>
+    <string name="location_service_disabled">Location service has stopped.</string>
+    <string name="notification_service_starter">Notifications service has started.</string>
+    <string name="notification_service_disabled">Notifications service has stopped.</string>
+
+    <string name="notification">Notifications</string>
+    <string name="location_run">Location run…</string>
+    <string name="remove">Remove</string>
+    <string name="information">Information</string>
+    <string name="add_information">Add Information</string>
+    <string name="check_as_unread">Check as unread</string>
+    <string name="check_as_read">Check as read</string>
+    <string name="items_selected">items selected</string>
+    <string name="details">Details</string>
+    <string name="description_unavailable">Description unavailable</string>
+
+    <string name="route">Route</string>
+
+    <string name="close_session">Close session</string>
+    <string name="close_session_message">Are you sure you want to log out?</string>
+
+    <string name="default_empty_title">Ups!</string>
+    <string name="default_empty_subtitle">No items found to display.</string>
+
+    <string name="send">Send</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="invalid_login">Invalid login information</string>
+    <string name="required_field">Required field</string>
+    <string name="recovery">Recovery</string>
+    <string name="recovery_message">Enter your email to continue with the recovery of your account</string>
+    <string name="recovery_error">An error has occurred and the password could not be recovered.</string>
+    <string name="password_recovery_msg">An email has been sent to you with the information necessary to recover your account. Once the process is complete you will be able to log in with your credentials.</string>
+
+    <string name="base_info">Information</string>
+    <string name="base_notification">Notification</string>
+    <string name="base_confirmation">Confirmation</string>
+    <string name="base_publicity">Publicity</string>
+    <string name="base_alert">Alert</string>
+    <string name="deactivate">Deactivate</string>
+    <string name="disable_restriction">The application has battery restrictions. Please disable for better performance</string>
+    <string name="base_link">Link</string>
+    <string name="base_suggestion">Suggestion</string>
+    <string name="base_service">Service</string>
+    <string name="base_new_type">News</string>
+    <string name="base_warning">Warning</string>
+    <string name="base_notifications">Notifications</string>
+    <string name="base_open">Open</string>
+    <string name="base_no_notifications_to_show">There are no notifications to display</string>
+    <string name="base_mark_all_as_read">Mark all as read</string>
+    <string name="first_select_the_load_date_time">Select the load date time</string>
+    <string name="incorrect_identity_card">Incorrect identity card</string>
+    <string name="error_occurred">"An unexpected error has occurred. Please try again later."</string>
+
+    <string name="wrong_password">The username and password combination is not recognized.</string>
+    <string name="blocked_password">Your user is blocked for exceeding the maximum number of attempts to log in incorrectly. Renew your password to login.</string>
+    <string name="expired_password">Your password validity period has expired. An email has been sent to you with instructions to renew it.</string>
+
+    <!-- Notification Filters -->
+    <string name="notification_filter_new">New</string>
+    <string name="notification_filter_read">Read</string>
+    <string name="notification_filter_all">All</string>
+
+    <!--    Request-->
+    <string name="request_detail">Request Detail\'s</string>
+    <string name="requester">Applicant</string>
+    <string name="request">Request</string>
+    <string name="ignore">Ignore</string>
+    <string name="tender">Tender</string>
+    <string name="follow">Follow</string>
+    <string name="follow_id">Follow id: %S</string>
+    <string name="location_start">Origin Location</string>
+    <string name="location_end">Destination location</string>
+    <string name="location_middle">Intermediate location</string>
+    <string name="origin">Origin</string>
+    <string name="destination">Destination</string>
+    <string name="middle">Intermediate</string>
+    <string name="work">Work</string>
+    <string name="history">History</string>
+    <string name="introduce_ic">Introduce CI</string>
+    <string name="introduce_signature">Introduce your signature</string>
+    <string name="dni">DNI</string>
+    <string name="dni_ben">DNI: %s</string>
+    <string name="email_ben">Email: %s</string>
+    <string name="phone">Phone: %s</string>
+    <string name="address">Address: %s</string>
+    <string name="name">Name: %s</string>
+    <string name="last_name">Last Name: %s</string>
+    <string name="delivered">Delivered by:</string>
+    <string name="transporter">Transporter by:</string>
+    <string name="received">Received by:</string>
+    <string name="gps_active">Activate your location:</string>
+    <string name="base_location_permissions_decline">In order to book this service it is required that you accept the Location permission. Please go to the app settings and activate it.</string>
+    <string name="base_gps_active_decline">In order to book this service, you are required to activate your Location. Please go to the app settings and activate it.</string>
+
+
+    <!--    Request Status-->
+    <string name="status">Status</string>
+    <string name="work_incoming">Work on the way</string>
+    <string name="work_certified">Work Certified</string>
+    <string name="work_by_init">Work started</string>
+    <string name="new_request">New</string>
+    <string name="request_read">Read</string>
+    <string name="request_offered">Offered</string>
+    <string name="offer_canceled">Offer Canceled</string>
+    <string name="work_completed">Work Completed</string>
+    <string name="work_canceled">Work Canceled</string>
+
+    <!--    Request Detail-->
+    <string name="sections">Sections</string>
+    <string name="conduces">Conduces</string>
+    <string name="loading">Loading</string>
+    <string name="initial_address">Initial</string>
+    <string name="final_address">Final</string>
+    <string name="collection">Collection Point</string>
+    <string name="delivery">Delivery Point</string>
+    <string name="exchange">Exchange Point</string>
+    <string name="check">Check Point</string>
+    <string name="inspection">Inspection Point</string>
+    <string name="postal_address">Postal Address</string>
+    <string name="packaging">Packaging</string>
+    <string name="weight">Weight</string>
+    <string name="length">Length</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="beneficiaries">Beneficiaries</string>
+    <string name="advanced_details">Advanced Details</string>
+
+    <!--    Offer-->
+    <string name="offer">Offer</string>
+    <string name="create_offer">Create Offer</string>
+    <string name="initial_amount">Initial Amount</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="locate">Locate</string>
+    <string name="message_offer_create_succeed">Your offer has been successfully sent.</string>
+    <string name="message_offer_require_fields">There are missing fields to complete. Check that you have entered the amounts correctly and selected the establishment.</string>
+    <string name="message_offer_create_error">An error occurred while submitting your offer. Try again.</string>
+    <string name="initial_amount_value">Initial amount: %d</string>
+    <string name="total_amount_value">Total amount: %d</string>
+    <string name="information_segment">Information of segment: </string>
+    <string name="date"> Date </string>
+    <string name="select_vehicle"> Select the vehicle </string>
+    <string name="time_lapse_load">Time lapse load</string>
+    <string name="time_lapse_delivery">Time lapse delivery</string>
+    <string name="set_the_quantities">Set the quantities</string>
+    <string name="select_shop">Select a Shop</string>
+    <string name="amount">Amount</string>
+    <string name="shop">Shops</string>
+    <string name="midpoint">Select a point</string>
+    <string name="delete_section">Delete section</string>
+    <string name="are_you_sure">Are you sure</string>
+
+
+    <!--    Waybill-->
+    <string name="add">Add</string>
+    <string name="waybill_description">Waybill description</string>
+    <string name="waybill">Waybill</string>
+    <string name="waybill_number">Waybill Number: %s</string>
+    <string name="field_cannot_be_empty">Field cannot be empty</string>
+    <string name="products">Products</string>
+    <string name="products_name">Product name: %s</string>
+    <string name="not_products">Not Products</string>
+    <string name="tracked_code">Tracked Code: %s</string>
+    <string name="package_number">Package Number: %s</string>
+    <string name="confirm">Confirm</string>
+    <string name="quantity_of_products">Quantity of Products</string>
+    <string name="quantity">Quantity: %s</string>
+    <string name="select_product">Select product</string>
+    <string name="select_packaging">Select packaging</string>
+    <string name="estimated_origin_date">Estimated start date: %s</string>
+    <string name="estimated_destiny_date">Estimated end date: %s</string>
+
+    <!--    Events-->
+    <string name="arrival_load">Arrival Load</string>
+    <string name="init_load">Start Load</string>
+    <string name="end_load">End Load</string>
+    <string name="output_load">Output Load</string>
+    <string name="arrival_download">Arrival DownLoad</string>
+    <string name="init_download">Start DownLoad</string>
+    <string name="end_download">End DownLoad</string>
+    <string name="output_download">Output DownLoad</string>
+    <string name="end">Ended</string>
+
+
+    <!--    Dashboard-->
+    <string name="in_process">In Process</string>
+    <string name="offered">Offered</string>
+    <string name="ended">Ended</string>
+
+    <!-- Points -->
+    <string name="points">Points</string>
+    <string name="description">Description:</string>
+    <string name="fine">Fine</string>
+    <string name="inspection_fine">Inspection:</string>
+    <string name="decree">Decree:</string>
+    <string name="article">Article:</string>
+    <string name="subsection">Subsection:</string>
+    <string name="id_fine">Id fine:</string>
+    <string name="classification">Classification:</string>
+
+
+    <string name="base_app_no_found">There is no application available to perform the action.</string>
+
+    <string name="need_permissions_title">Necessary permissions</string>
+    <string name="need_permissions_text">For the correct operation of the application, it is necessary to grant permanent location permissions and phone management permission. Go to Permissions>Location>Always Allow and Permissions>Phone>Allow</string>
+    <string name="need_permissions_action">Grant permissions</string>
+
+    <string name="do_not_show_again">Do not show again</string>
+
+    <!--    <string name="permission">Permission</string>-->
+    <string name="battery">Battery: </string>
+    <string name="disable_battery_optimization">You are required to disable battery optimization </string>
+    <string name="telephone">Telephone</string>
+    <string name="are_you_sure_to_cancel">Are you sure you want to cancel? If you do not enable the necessary permissions, the application may not function properly and you may experience issues while using it.</string>
+
+    <string name="permission_accepted">For the correct functioning of the application you must guarantee the following permissions</string>
+    <string name="base_location_permissions_decline2">Is required that you accept the Location permission.</string>
+    <string name="base_phone_permissions_decline2">You are required to grant permissions to the phone.</string>
+    <!--    <string name="base_gps_active_decline">In order to book this service, you are required to activate your Location. Please go to the app settings and activate it.</string>-->
+
+    <!--    <string name="disable_restriction">The application has battery restrictions. Please disable for better performance</string>-->
+
+</resources>

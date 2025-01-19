@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="full_app_name">Justo a Tiempo</string>
+    <string name="version">Versión</string>
+
+    <string name="home_screen">Inicio</string>
+    <string name="dashboard">Mis Trabajos</string>
+    <string name="route">Ruta</string>
+
+    <string name="settings">Configuración</string>
+    <string name="about">Acerca de</string>
+    <string name="search">Buscar</string>
+
+    <!--Greetings-->
+    <string name="welcome">Bienvenido</string>
+    <string name="greeting_morning_1">Buenos días</string>
+    <string name="greeting_morning_2">Buen día</string>
+    <string name="greeting_afternoon_1">Buenas tardes</string>
+    <string name="greeting_night_1">Buenas noches</string>
+    <string name="greeting_1">Saludos</string>
+    <string name="greeting_2">Bienvenido</string>
+    <string name="greeting_3">Hola</string>
+    <string name="greeting_4">Gusto de verte</string>
+    <string name="greeting_5">Hola, bienvenido de vuelta</string>
+
+    <string name="email">Correo Electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="forgot_pass">¿Ha olvidado su contraseña?</string>
+    <string name="base_login">Iniciar Sesión</string>
+    <string name="with_login">Iniciar Sesión con:</string>
+    <string name="hide_password">Ocultar contraseña</string>
+    <string name="show_password">Mostrar contraseña</string>
+    <string name="send">Enviar</string>
+    <string name="invalid_email">Correo no válido</string>
+    <string name="invalid_login">Información de sesion inválida</string>
+    <string name="recovery">Recuperar</string>
+    <string name="required_field">Campo requerido</string>
+    <string name="recovery_message">Ingrese su correo electrónico para continuar con la recuperación de su cuenta.</string>
+    <string name="recovery_error">Ha ocurrido un error y no se ha podido recuperar la contraseña.</string>
+    <string name="password_recovery_msg">Se le ha enviado un correo electrónico con la información necesaria para la recupercación de su cuenta. Una vez completado el proceso podrá iniciar sesión con sus credenciales.</string>
+
+    <string name="avatar">avatar</string>
+    <string name="permission">Permisos</string>
+    <string name="onBack">Atrás</string>
+    <string name="theme">Tema</string>
+    <string name="theme_description">Seleccione el tema de la aplicacion</string>
+    <string name="remember_login">Seguridad</string>
+    <string name="remember_login_description">Recordar credenciales al inicio. Se pedirá la autentificación solo cuando expire su sesión.</string>
+    <string name="location_service">Servicio de localización</string>
+    <string name="location_description">Habilita el servicio de localización.</string>
+    <string name="notification_service">Servicio de notificaciones</string>
+    <string name="notification_service_description">Habilita el servicio de notificaciones.</string>
+    <string name="system_theme">Sistema</string>
+    <string name="dark_theme">Oscuro</string>
+    <string name="light_theme">Claro</string>
+    <string name="time_lapse">Horario</string>
+    <string name="location">Localización</string>
+
+    <string name="error">Error</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="close">Cerrar</string>
+    <string name="eraser">Borrar</string>
+    <string name="done">Hecho</string>
+    <string name="save">Salvar</string>
+    <string name="understood">Entendido</string>
+
+    <string name="change_log">Historial de cambios</string>
+    <string name="follow_us">Síguenos</string>
+    <string name="base_give_us_opinion">Danos tu opinion</string>
+    <string name="base_brief">Empresa de Tecnologías de la Información para la Defensa.</string>
+
+    <string name="location_service_starter">Se ha iniciado el servicio de localización.</string>
+    <string name="location_service_disabled">Se ha detenido el servicio de localización.</string>
+    <string name="notification_service_starter">Se ha iniciado el servicio de notificaciones.</string>
+    <string name="notification_service_disabled">Se ha detenido el servicio de notificaciones.</string>
+
+    <string name="notification">Notificaciones</string>
+    <string name="location_run">Localizacion ejecutandose…</string>
+    <string name="information">Información</string>
+    <string name="add_information">Ingresar Información</string>
+    <string name="check_as_unread">Marcar como no leído</string>
+    <string name="check_as_read">Marcar como leído</string>
+    <string name="items_selected">elementos seleccionados</string>
+    <string name="details">Detalles</string>
+    <string name="remove">Eliminar</string>
+    <string name="description_unavailable">Descripción no disponible.</string>
+    <string name="close_session">Cerrar sesión</string>
+    <string name="close_session_message">¿Está seguro que desea cerrar sesion?</string>
+
+    <string name="default_empty_title">Ups!</string>
+    <string name="default_empty_subtitle">No se encuentran elementos para mostrar.</string>
+
+    <string name="base_info">Información</string>
+    <string name="base_notification">Notificación</string>
+    <string name="base_confirmation">Confirmación</string>
+    <string name="base_publicity">Publicidad</string>
+    <string name="base_alert">Alerta</string>
+    <string name="deactivate">Desactivar</string>
+    <string name="base_link">Link</string>
+    <string name="base_suggestion">Sugerencia</string>
+    <string name="base_service">Servicio</string>
+    <string name="base_new_type">Noticia</string>
+    <string name="base_warning">Advertencia</string>
+    <string name="base_notifications">Notificaciones</string>
+    <string name="base_open">Abrir</string>
+    <string name="disable_restriction">La aplicación tiene restricciones de batería. Por favor, desactívelas para un mejor funcionamiento.</string>
+    <string name="base_no_notifications_to_show">No se encuentran notificaciones para mostrar</string>
+    <string name="base_mark_all_as_read">Marcar todo como leído</string>
+    <string name="first_select_the_load_date_time">Debe seleccionar fecha y hora de carga</string>
+    <string name="incorrect_identity_card">Carnet de identidad incorrecto</string>
+    <string name="error_occurred">Se ha producido un error inesperado. Inténtelo más tarde</string>
+
+    <string name="wrong_password">No se reconoce la combinación de usuario y contraseña.</string>
+    <string name="blocked_password">Su usuario se encuentra bloqueado por sobrepasar el número máximo de intentos
+        para iniciar sesion de manera incorrecta. Renueve su contraseña para poder iniciar sesión.</string>
+    <string name="expired_password">El período de validez de su contraseña ha expirado. Se le ha enviado un
+        correo con las instrucciones para renovarla.</string>
+
+    <!-- Notification Filters -->
+    <string name="notification_filter_new">Nuevas</string>
+    <string name="notification_filter_read">Leídas</string>
+    <string name="notification_filter_all">Todas</string>
+
+    <string name="request_detail_screen">Detalles</string>
+    <string name="signature_screen">Firma del Transportador</string>
+    <string name="remittent_signature_screen">Firma del Remitente</string>
+    <string name="beneficiary_signature_screen">Firma del Beneficiario</string>
+    <string name="responsibility">Responsabilidades</string>
+    <string name="responsibility_screen">Responsibilidad</string>
+
+    <!--    Request-->
+    <string name="request_detail">Detalles de la solicitud</string>
+    <string name="requester">Solicitante</string>
+    <string name="request">Solicitud</string>
+    <string name="ignore">Ignorar</string>
+    <string name="tender">Ofertar</string>
+    <string name="follow">Seguir</string>
+    <string name="follow_id">ID de seguimiento: %S</string>
+    <string name="location_start">Locazacion de origen</string>
+    <string name="location_end">Locazacion de destino</string>
+    <string name="location_middle">Locazacion intermedia</string>
+    <string name="origin">Origen</string>
+    <string name="destination">Destino</string>
+    <string name="middle">Intermedio</string>
+    <string name="work">Trabajo</string>
+    <string name="history">Historial</string>
+    <string name="introduce_ic">Escirba el CI</string>
+    <string name="introduce_signature">Introduzca su firma</string>
+    <string name="dni">CI</string>
+    <string name="dni_ben">CI: %s</string>
+    <string name="email_ben">Correo: %s</string>
+    <string name="phone">Telefono: %s</string>
+    <string name="address">Direccion: %s</string>
+    <string name="name">Nombre: %s</string>
+    <string name="last_name">Apellidos: %s</string>
+    <string name="delivered">Entregado por:</string>
+    <string name="transporter">Transportado por:</string>
+    <string name="received">Recibido por:</string>
+    <string name="gps_active">Active se localización:</string>
+    <string name="base_location_permissions_decline">Para poder reservar en este servicio es requerido que usted acepte el permiso de la Localización. Por favor vaya a los ajustes de la aplicación y activelo.</string>
+    <string name="base_gps_active_decline">Para poder reservar en este servicio es requerido que usted active su Localización. Por favor vaya a los ajustes de la aplicación y activelo.</string>
+
+    <!--    Request Status-->
+    <string name="status">Estado</string>
+    <string name="work_incoming">Trabajo en camino</string>
+    <string name="work_certified">Trabajo Certificado</string>
+    <string name="work_by_init">Trabajo iniciado</string>
+    <string name="new_request">Nueva</string>
+    <string name="request_read">Leída</string>
+    <string name="request_offered">Ofertada</string>
+    <string name="offer_canceled">Oferta Cancelada</string>
+    <string name="work_completed">Trabajo Completado</string>
+    <string name="work_canceled">Trabajo Cancelado</string>
+
+    <!--    Request Detail-->
+    <string name="sections">Transportaciones</string>
+    <string name="conduces">Conduces</string>
+    <string name="loading">Cargando</string>
+    <string name="initial_address">Inicial</string>
+    <string name="final_address">Final</string>
+    <string name="collection">Punto de Recogida</string>
+    <string name="delivery">Punto de Entrega</string>
+    <string name="exchange">Punto de Intercambio</string>
+    <string name="check">Punto de Chequeo</string>
+    <string name="inspection">Punto de Inspección</string>
+    <string name="postal_address">Dirección Postal</string>
+    <string name="packaging">Empaquetado</string>
+    <string name="weight">Peso</string>
+    <string name="length">Largo</string>
+    <string name="width">Ancho</string>
+    <string name="height">Alto</string>
+    <string name="beneficiaries">Beneficiarios</string>
+    <string name="advanced_details">Detalles Avanzados</string>
+
+    <!--    Offer-->
+    <string name="offer">Oferta</string>
+    <string name="create_offer">Crear Oferta</string>
+    <string name="initial_amount">Monto Inicial</string>
+    <string name="total_amount">Monto Total</string>
+    <string name="vehicle">Vehículo</string>
+    <string name="locate">Localizar</string>
+    <string name="message_offer_create_succeed">Su oferta ha sido enviada satisfactoriamente.</string>
+    <string name="message_offer_require_fields">Faltan campos por completar. Revise que haya ingresado correctamente los montos y seleccionado el establecimiento.</string>
+    <string name="message_offer_create_error">Ha ocurrido un error al enviar su oferta. Intentelo de nuevo.</string>
+    <string name="total_amount_value">Monto total: %d</string>
+    <string name="initial_amount_value">Monto inicial: %d</string>
+    <string name="information_segment">Información del tramo: </string>
+    <string name="date"> Fecha </string>
+    <string name="select_vehicle"> Seleccione el vehículo </string>
+    <string name="time_lapse_load">Horario de Carga</string>
+    <string name="time_lapse_delivery">Horario de Entrega</string>
+    <string name="set_the_quantities">Establezca los Montos</string>
+    <string name="amount">Montos</string>
+    <string name="select_shop">Seleccione el comercio</string>
+    <string name="shop">Comercios</string>
+    <string name="midpoint">Seleccione el punto</string>
+    <string name="delete_section">Eliminar tramo</string>
+    <string name="are_you_sure">Desea eliminar el tramo</string>
+
+    <!--    Waybill-->
+    <string name="add">Añadir</string>
+    <string name="waybill_description">Descripción de la carta de porte</string>
+    <string name="waybill">Carta Porte</string>
+    <string name="waybill_number">Número de Cartaporte: %s</string>
+    <string name="field_cannot_be_empty">El campo no puede estar vacío</string>
+    <string name="products">Productos</string>
+    <string name="products_name">Nombre del producto: %s</string>
+    <string name="not_products">Sin Productos</string>
+    <string name="tracked_code">Código de Seguimiento: %s</string>
+    <string name="package_number">Número de paquete: %s</string>
+    <string name="confirm">Confirmar</string>
+    <string name="quantity_of_products">Cantidad de productos</string>
+    <string name="quantity">Cantidad: %s</string>
+    <string name="select_product"> Seleccione el producto</string>
+    <string name="select_packaging"> Seleccione el embalaje</string>
+    <string name="estimated_origin_date">Fecha de inicio estimada: %s</string>
+    <string name="estimated_destiny_date">Fecha fin estimada: %s</string>
+
+    <!--    Events-->
+    <string name="arrival_load">Llegada carga</string>
+    <string name="init_load">Inicio carga</string>
+    <string name="end_load">Fin carga</string>
+    <string name="output_load">Salida carga</string>
+    <string name="arrival_download">Llegada descarga</string>
+    <string name="init_download">Inicio descarga</string>
+    <string name="end_download">Fin descarga</string>
+    <string name="output_download">Salida descarga</string>
+    <string name="end">Finalizado</string>
+
+    <!--    Dashboard-->
+    <string name="in_process">En Proceso</string>
+    <string name="offered">Ofertados</string>
+    <string name="ended">Terminados</string>
+
+    <!-- Points -->
+    <string name="points">Puntos</string>
+    <string name="description">Descripción:</string>
+    <string name="fine">Multa</string>
+    <string name="inspection_fine">Inspección:</string>
+    <string name="decree">Decreto:</string>
+    <string name="article">Artículo:</string>
+    <string name="subsection">Inciso:</string>
+    <string name="id_fine">Id multa:</string>
+    <string name="classification">Clasificación:</string>
+
+
+
+    <string name="base_app_no_found">No se encuentra ninguna aplicación disponible para realizar la acción.</string>
+
+    <string name="need_permissions_title">Permisos necesarios</string>
+    <string name="need_permissions_text">Para el correcto funcionamiento de la aplicación, es necesario otorgar los permisos permanentes de ubicación y el permiso de la gestión del teléfono. Dirijase a Permisos>Ubicación>Permitir Siempre y Permisos>Teléfono>Permitir</string>
+    <string name="need_permissions_action">Otorgar permisos</string>
+
+    <string name="do_not_show_again">No volver a mostrar </string>
+
+    <!--    <string name="disable_restriction">La aplicación tiene restricciones de batería. Por favor, desactívelas para un mejor funcionamiento.</string>-->
+
+    <string name="base_location_permissions_decline2">Es requerido que usted conceda permisos para simpre de la localización.</string>
+    <string name="base_phone_permissions_decline2">Es requerido que usted conceda permisos al telefono.</string>
+    <!--    <string name="base_gps_active_decline">Para poder reservar en este servicio es requerido que usted active su Localización. Por favor vaya a los ajustes de la aplicación y activelo.</string>-->
+
+    <!--    <string name="permission">Permisos</string>-->
+    <string name="battery">Bateria: </string>
+    <string name="disable_battery_optimization">Es requerido que usted desactive la optimización de bateria </string>
+    <string name="telephone">Telefono</string>
+    <string name="are_you_sure_to_cancel">¿Está seguro de que desea cancelar? Si no activa los permisos necesarios, la aplicación podría no funcionar correctamente y podría experimentar problemas en su uso.</string>
+
+
+    <string name="permission_accepted">Para el correcto funcionamiento de la aplicación debe garantizar los siguientes permisos</string>
+
+</resources>
