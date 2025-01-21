@@ -76,6 +76,7 @@ dependencies {
     implementation(project(":feature:login"))
     implementation(libs.androidx.lifecycle.runtime.compose.android)
     implementation(libs.androidx.navigation.common.ktx)
+    implementation(project(":feature:home"))
     coreLibraryDesugaring(libs.com.android.tools.desugar)
 
     //SplashScreen

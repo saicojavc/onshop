@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "com.saico.login"
+    namespace = "com.saico.feature.home"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -48,8 +48,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
     implementation(libs.androidx.navigation.common.ktx)
     implementation(libs.androidx.material3.android)
     implementation(libs.androidx.activity.compose)

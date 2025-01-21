@@ -71,6 +71,7 @@ object AppDim {
     val ROW_DATA_TIME_SIZE = 200.dp
     val LAYOUT_DIMEN = 250.dp
     val BAR_DIMEN = 120.dp
+    val IMAGE_DIMEN_HUGE = 300.dp
 }
 
 object FontSizes {

@@ -23,6 +23,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import com.saico.feature.home.navigation.homeGraph
 import com.saico.login.navigation.loginGraph
 import com.saico.onshop.ui.navigation.Navigator
 import com.saico.onshop.ui.theme.OnshopTheme
@@ -80,6 +81,7 @@ private fun MainContainer(
             modifier = Modifier.weight(1f)
         ){
             loginGraph(navController)
+            homeGraph(navController)
         }
     }
 
