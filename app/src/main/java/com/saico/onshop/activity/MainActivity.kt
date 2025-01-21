@@ -71,15 +71,15 @@ private fun MainContainer(
     startDestination: String,
     navigator: Navigator
 ){
-    val navControllet = rememberNavController()
+    val navController = rememberNavController()
 
     Column {
         NavHost(
-            navController = navControllet,
+            navController = navController,
             startDestination = startDestination,
             modifier = Modifier.weight(1f)
         ){
-            loginGraph(navControllet)
+            loginGraph(navController)
         }
     }
 
