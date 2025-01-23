@@ -1,14 +1,13 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.com.dagger.hilt)
     id("com.google.devtools.ksp")
     id("kotlin-parcelize")
 }
 
 android {
-    namespace = "com.saico.login"
+    namespace = "com.saico.onshop.network"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
@@ -35,36 +34,35 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
+    buildFeatures {
+        buildConfig = true
+    }
 }
 
 dependencies {
-    implementation(project(":core:ui"))
-    implementation(project(":core:common"))
-    implementation(project(":core:model"))
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.navigation.common.ktx)
-    implementation(libs.androidx.material3.android)
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-
-    //firebase
-    implementation(libs.firebase.auth.ktx)
-    implementation(libs.play.services.auth)
+    //Modules
+    implementation (project(":core:common"))
+//    implementation( project(":core:domain"))
+    implementation (project(":core:model"))
 
     //Core
     implementation(libs.androidx.core.ktx)
     coreLibraryDesugaring(libs.com.android.tools.desugar)
-    //hilt
+
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+
+    //Retrofit
+    implementation( libs.bundles.com.retrofit)
+
+    //Coroutines
+    implementation (libs.org.jetbrains.kotlin.coroutines.android)
+
+    //Paging
+    implementation( libs.androidx.paging)
+
+    //Hilt
     implementation(libs.com.google.dagger.hilt.android)
     ksp(libs.com.google.dagger.hilt.compiler)
-
-    implementation(libs.androidx.constraintlayout.compose)
 }
