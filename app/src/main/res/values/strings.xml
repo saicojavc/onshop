@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Onshop</string>
+    <string name="app_name" translatable="false">Onshop</string>
+    <string name="web_client_id" translatable="false">241476353591-rtcp50hr3taganr620s0qbqq7a4ld95k.apps.googleusercontent.com</string>
 </resources>

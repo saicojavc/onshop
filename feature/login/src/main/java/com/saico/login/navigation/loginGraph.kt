@@ -7,13 +7,15 @@ import androidx.navigation.navigation
 import com.saico.login.LoginScreen
 import com.saico.onshop.ui.navigation.routes.login.LoginRoute
 
-fun NavGraphBuilder.loginGraph(navHostController: NavHostController) {
+fun NavGraphBuilder.loginGraph(navHostController: NavHostController,  onLoginClick: () -> Unit) {
     navigation(
         startDestination = LoginRoute.LoginScreenRoute.route,
         route = LoginRoute.RootRoute.route
     ){
         composable(route = LoginRoute.LoginScreenRoute.route) {
-            LoginScreen(navHostController)
+            LoginScreen(
+                navController = navHostController,
+                onLoginClick = onLoginClick)
         }
     }
 }

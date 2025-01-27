@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="web_client_id" translatable="false" tools:ignore="ExtraTranslation">241476353591-rtcp50hr3taganr620s0qbqq7a4ld95k.apps.googleusercontent.com</string>
+
     <string name="full_app_name">Justo a Tiempo</string>
     <string name="version">Versión</string>
 

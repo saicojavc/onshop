@@ -37,11 +37,15 @@ android {
 dependencies {
 
     //Modules
+    implementation(project(":app"))
     implementation (project(":core:common"))
     implementation (project(":core:model"))
 
     //Core
     implementation(libs.androidx.core.ktx)
+    implementation(libs.play.services.auth)
+    implementation(libs.firebase.common)
+    implementation(libs.firebase.auth.ktx)
     coreLibraryDesugaring(libs.com.android.tools.desugar)
 
     //Test

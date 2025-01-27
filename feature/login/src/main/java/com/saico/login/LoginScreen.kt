@@ -1,7 +1,7 @@
 package com.saico.login
 
+import android.widget.Toast
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
@@ -10,31 +10,48 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.systemBars
 import androidx.compose.material3.IconButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavHostController
 import com.saico.onshop.ui.theme.AppDim
 import com.saico.onshop.ui.theme.PaddingDim
 import com.saico.onshop.ui.R
-import com.saico.onshop.ui.navigation.routes.home.HomeRoute
-import kotlin.reflect.KFunction0
 
 @Composable
 fun LoginScreen(
+    onLoginClick: () -> Unit,
     navController: NavHostController,
     viewModel: LogInViewModel = hiltViewModel()
 ) {
+    val uiState = viewModel.uiState.collectAsStateWithLifecycle()
+    val context = LocalContext.current
+
+    LaunchedEffect(key1 = uiState.value.signInError) {
+        uiState.value.signInError?.let { error ->
+            Toast.makeText(
+                context,
+                error,
+                Toast.LENGTH_LONG
+            ).show()
+        }
+    }
+
     Content(
-        navController = navController
+        navController = navController,
+        onLoginClick = onLoginClick
     )
 }
 
 @Composable
 fun Content(
     navController: NavHostController,
+    onLoginClick: () -> Unit
 ) {
 
     ConstraintLayout(
@@ -83,13 +100,13 @@ fun Content(
         )
 
         IconButton(
-            onClick = {
-                navController.navigate(
-                    HomeRoute.HomeScreenRoute.route
-                )
+            onClick = onLoginClick
+//                navController.navigate(
+//                    HomeRoute.HomeScreenRoute.route
+//                )
 
 
-            },
+            ,
             modifier = Modifier
                 .padding(PaddingDim.MEDIUM)
                 .size(AppDim.BUTTON_WIDTH)
