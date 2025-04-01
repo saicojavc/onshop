@@ -69,6 +69,7 @@ import androidx.compose.material.icons.rounded.Route
 import androidx.compose.material.icons.rounded.Schedule
 import androidx.compose.material.icons.rounded.Search
 import androidx.compose.material.icons.rounded.Settings
+import androidx.compose.material.icons.rounded.Star
 import androidx.compose.material.icons.rounded.Store
 import androidx.compose.material.icons.rounded.Timer
 import androidx.compose.material.icons.rounded.Visibility
@@ -136,6 +137,7 @@ object OSIcons {
     val Package = Icons.Outlined.Backpack
     val DownloadDone = Icons.Rounded.DownloadDone
     val SearchIcon = Icons.Rounded.Search
+    val Star = Icons.Rounded.Star
     val SettingIcon = Icons.Rounded.Settings
     val SelectVehicle = Icons.Outlined.CarCrash
     val SelectedCalendar = Icons.Outlined.CalendarMonth

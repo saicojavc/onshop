@@ -48,7 +48,7 @@ fun Content(){
             OShNavigationBar(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(PaddingDim.SMALL)
+                    .padding(PaddingDim.VERY_SMALL)
                     .clip(
                         shape = CircleShape
                     ),
