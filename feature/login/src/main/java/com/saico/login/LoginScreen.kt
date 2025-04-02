@@ -100,13 +100,10 @@ fun Content(
         )
 
         IconButton(
-            onClick = onLoginClick
+            onClick = onLoginClick,
 //                navController.navigate(
 //                    HomeRoute.HomeScreenRoute.route
 //                )
-
-
-            ,
             modifier = Modifier
                 .padding(PaddingDim.MEDIUM)
                 .size(AppDim.BUTTON_WIDTH)

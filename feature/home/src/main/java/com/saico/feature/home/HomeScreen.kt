@@ -35,11 +35,11 @@ import com.saico.onshop.ui.theme.PaddingDim
 fun HomeScreen(
     navController: NavHostController,
 ) {
-   Content()
+   Content(navController = navController)
 }
 
 @Composable
-fun Content(){
+fun Content( navController: NavHostController,){
     var selectedBottomAppBarItem by remember { mutableStateOf(BottomAppBarItem.EXPLORER) }
 
     Scaffold(
@@ -125,7 +125,8 @@ fun Content(){
             when(selectedBottomAppBarItem){
                 BottomAppBarItem.EXPLORER -> {
                     ExplorerScreen(
-                        modifier = Modifier.padding(paddingValues)
+                        modifier = Modifier.padding(paddingValues),
+                        navController = navController
                     )
                 }
                 BottomAppBarItem.CART -> {

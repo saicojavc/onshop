@@ -1,6 +1,7 @@
 package com.saico.feature.home.screen
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -13,9 +14,7 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
-import androidx.compose.material.icons.Icons
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -24,15 +23,16 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.input.pointer.motionEventSpy
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.navigation.NavHostController
 import com.saico.onshop.ui.R
 import com.saico.onshop.ui.components.OSCard
 import com.saico.onshop.ui.components.OSIcon
 import com.saico.onshop.ui.components.OSText
 import com.saico.onshop.ui.components.icon.OSIcons
+import com.saico.onshop.ui.navigation.routes.product_detail.ProductDetailRoute
 import com.saico.onshop.ui.theme.AppDim
 import com.saico.onshop.ui.theme.FontSizes
 import com.saico.onshop.ui.theme.PaddingDim
@@ -40,14 +40,15 @@ import kotlinx.coroutines.delay
 
 @Composable
 fun ExplorerScreen(
-    modifier: Modifier
+    modifier: Modifier,
+    navController: NavHostController,
 ) {
-    Content()
+    Content(navController = navController)
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun Content() {
+fun Content(navController: NavHostController,) {
 
 
     val brandList = listOf(
@@ -192,10 +193,16 @@ fun Content() {
                         verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
-                        items(manList){ item ->
+                        items(manList) { item ->
                             Column {
                                 OSCard(
-                                    modifier = Modifier.padding(PaddingDim.VERY_SMALL),
+                                    modifier = Modifier
+                                        .padding(PaddingDim.VERY_SMALL)
+                                        .clickable {
+                                            navController.navigate(
+                                                ProductDetailRoute.ProductDetailScreenRoute.route
+                                            )
+                                        },
                                     content = {
                                         Image(
                                             modifier = Modifier.size(AppDim.BAR_DIMEN),

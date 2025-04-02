@@ -31,6 +31,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.google.android.gms.auth.api.identity.Identity
 import com.saico.feature.home.navigation.homeGraph
+import com.saico.feature.product_detail.navigation.productDetailGraph
 import com.saico.login.navigation.loginGraph
 import com.saico.onshop.GoogleAuthUiClient
 import com.saico.onshop.ui.navigation.Navigator
@@ -165,6 +166,7 @@ private fun MainContainer(
                 onLoginClick = onLoginClick
                 )
             homeGraph(navController)
+            productDetailGraph(navController)
         }
     }
 
