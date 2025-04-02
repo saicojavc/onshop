@@ -18,6 +18,7 @@ import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material.icons.outlined.LocationOff
 import androidx.compose.material.icons.outlined.LocationOn
 import androidx.compose.material.icons.outlined.Password
+import androidx.compose.material.icons.outlined.ShoppingCart
 import androidx.compose.material.icons.rounded.Add
 import androidx.compose.material.icons.rounded.AddAlert
 import androidx.compose.material.icons.rounded.AddLocationAlt
@@ -142,6 +143,7 @@ object OSIcons {
     val SelectVehicle = Icons.Outlined.CarCrash
     val SelectedCalendar = Icons.Outlined.CalendarMonth
     val Subsection = Icons.Rounded.FormatListNumbered
+    val ShoppingCart = Icons.Outlined.ShoppingCart
     val ScannerIcon = Icons.Rounded.QrCodeScanner
     val TimerIcon = Icons.Rounded.Timer
     val Transporter = Icons.Rounded.EmojiTransportation
