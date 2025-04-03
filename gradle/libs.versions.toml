@@ -22,7 +22,7 @@ android-hilt-navigation-compose = "1.2.0"
 android-navigation-compose = "2.8.5"
 android-corutines-kotlin = "1.9.0"
 androidx-paging-version = "3.3.5"
-
+hilt = "2.48"
 #config
 compileSdk = "35"
 targetSdk = "34"
@@ -34,14 +34,19 @@ material3Android = "1.3.1"
 navigationCommonKtxVersion = "2.8.5"
 appcompat = "1.7.0"
 material = "1.12.0"
-
+android-datastore = "1.1.1"
+datastoreCoreAndroid = "1.1.1"
+datastorePreferencesCoreJvm = "1.1.1"
 io-coil-kt = "2.7.0"
 
 retrofit-version = "2.11.0"
 okhttp3-interceptor-version = "5.0.0-alpha.14"
 firebaseCommon = "21.0.0"
 roomKtx = "2.6.1"
-
+android-room-db = "2.6.1"
+google-play-location = "21.3.0"
+qr-generator-version = "1.0.1"
+transportRuntime = "4.0.0"
 
 [libraries]
 com-android-tools-desugar = { module = "com.android.tools:desugar_jdk_libs", version.ref = "android-tools-desugar" }
@@ -82,6 +87,11 @@ androidx-lifecycle-runtime-compose-android = { group = "androidx.lifecycle", nam
 play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
 transportation-consumer = { group = "com.google.android.libraries.mapsplatform.transportation", name = "transportation-consumer", version.ref = "transportationConsumer" }
 androidx-material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3Android" }
+#Datastore
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "android-datastore" }
+androidx-datastore-proto = { module = "androidx.datastore:datastore", version.ref = "android-datastore" }
+androidx-datastore-core-android = { group = "androidx.datastore", name = "datastore-core-android", version.ref = "datastoreCoreAndroid" }
+androidx-datastore-preferences-core-jvm = { group = "androidx.datastore", name = "datastore-preferences-core-jvm", version.ref = "datastorePreferencesCoreJvm" }
 
 #Paging
 androidx-paging-compose = { module = "androidx.paging:paging-compose", version.ref = "androidx-paging-version" }
@@ -104,11 +114,24 @@ org-jetbrains-kotlin-coroutines-android = { module = "org.jetbrains.kotlinx:kotl
 firebase-common = { group = "com.google.firebase", name = "firebase-common", version.ref = "firebaseCommon" }
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
 
+#room
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "android-room-db" }
+androidx-room-paging = { module = "androidx.room:room-paging", version.ref = "android-room-db" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "android-room-db" }
+google-play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "google-play-location" }
+
+com-github-qr-generator = { group = "com.github.androidmads", name = "QRGenerator", version.ref = "qr-generator-version" }
+transport-runtime = { group = "com.google.android.datatransport", name = "transport-runtime", version.ref = "transportRuntime" }
+
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
+#hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 com-dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "android-dagger-hilt" }
 com-google-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
@@ -119,4 +142,9 @@ com-retrofit = [
     "com-squareup-retrofit",
     "com-squareup-retrofit-gson",
     "com-squareup-okhttp3-logging-interceptor",
+]
+androidx-room = [
+    "androidx-room-ktx",
+    "androidx-room-paging",
+    "androidx-room-runtime",
 ]
