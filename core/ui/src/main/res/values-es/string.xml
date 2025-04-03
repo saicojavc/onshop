@@ -233,7 +233,7 @@
     <string name="package_number">Número de paquete: %s</string>
     <string name="confirm">Confirmar</string>
     <string name="quantity_of_products">Cantidad de productos</string>
-    <string name="quantity">Cantidad: </string>
+    <string name="quantity">Cantidad</string>
     <string name="select_product"> Seleccione el producto</string>
     <string name="select_packaging"> Seleccione el embalaje</string>
     <string name="estimated_origin_date">Fecha de inicio estimada: %s</string>

@@ -239,7 +239,7 @@
     <string name="package_number">Package Number: %s</string>
     <string name="confirm">Confirm</string>
     <string name="quantity_of_products">Quantity of Products</string>
-    <string name="quantity">Quantity: </string>
+    <string name="quantity">Quantity</string>
     <string name="select_product">Select product</string>
     <string name="select_packaging">Select packaging</string>
     <string name="estimated_origin_date">Estimated start date: %s</string>
