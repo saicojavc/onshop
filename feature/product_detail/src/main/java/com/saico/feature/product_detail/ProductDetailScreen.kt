@@ -1,5 +1,8 @@
 package com.saico.feature.product_detail
 
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -15,6 +18,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -42,10 +46,12 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.saico.onshop.ui.R
+import com.saico.onshop.ui.components.OSCard
 import com.saico.onshop.ui.components.OSDropDownMenu
 import com.saico.onshop.ui.components.OSText
 import com.saico.onshop.ui.components.OSTooltipIcon
@@ -87,6 +93,7 @@ fun Content(
     productImg : List<Int>,
     productCount : Int
 ){
+    val (expanded, onExpand) = remember { mutableStateOf(false) }
     var selectedImage by remember {
         mutableStateOf(productImg.firstOrNull())
     }
@@ -247,6 +254,51 @@ fun Content(
                             text = "Buy Now"
                         )
                     }
+                }
+            }
+            item {
+                OSCard(
+                    modifier = Modifier
+                        .padding(PaddingDim.SMALL)
+                        .clickable { onExpand(!expanded) }
+                ) {
+                    OSText(
+                        text = "Lorem ipsum odor amet, consectetuer adipiscing elit. Eget maximus est leo per ornare ac ad. Luctus parturient eu ad duis; habitant aptent. Lectus mauris fringilla maecenas augue litora. Posuere mauris donec, posuere tortor dictumst suspendisse porta nascetur. Bibendum platea auctor magna volutpat eu placerat purus. Senectus dapibus hac a pellentesque torquent laoreet cursus est. Montes ex ac elit ultricies imperdiet phasellus, potenti ridiculus. Nascetur aliquam sociosqu justo porta dictum rhoncus. Felis eros accumsan ornare, vulputate senectus sociosqu. Nec justo proin diam suscipit; phasellus porta hendrerit facilisi. Eleifend justo feugiat a mi natoque condimentum.",
+                        maxLines = if (expanded) Int.MAX_VALUE else 5,
+                        overflow = TextOverflow.Ellipsis,
+                        modifier = Modifier
+                            .padding(PaddingDim.SMALL)
+                            .animateContentSize(
+                                spring(
+                                    Spring.DampingRatioLowBouncy, Spring.StiffnessLow
+                                )
+                            )
+
+                    )
+                }
+            }
+            item {
+                HorizontalPager(
+                    state = pagerState,
+                    beyondViewportPageCount = productImg.size,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(
+                            top = PaddingDim.MEDIUM,
+                            bottom = PaddingDim.VERY_LARGE
+                        )
+                ) { page ->
+                    Image(
+                        painter = painterResource(id = productImg[page]),
+                        contentDescription = null,
+                        modifier =  Modifier
+                            .padding(PaddingDim.SMALL)
+                            .height(AppDim.LAYOUT_DIMEN)
+                            .fillMaxWidth()
+                            .clip(MaterialTheme.shapes.medium)
+                            .background(MaterialTheme.colorScheme.surfaceVariant),
+                        contentScale = ContentScale.Crop
+                    )
                 }
             }
         }
