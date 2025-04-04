@@ -10,8 +10,9 @@ import com.saico.onshop.core.database.util.DB_VERSION
     entities = [
         ProductEntity::class
     ],
-    version = DB_VERSION, exportSchema = false
+    version = DB_VERSION,
+    exportSchema = false
 )
 abstract class KRoomDatabase : RoomDatabase(){
-    abstract fun productDao() : ProductDao
+    abstract fun productDao(): ProductDao
 }

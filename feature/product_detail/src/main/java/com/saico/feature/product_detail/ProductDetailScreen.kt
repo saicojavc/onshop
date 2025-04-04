@@ -80,9 +80,14 @@ fun ProductDetailScreen(
         R.drawable.men1_5,
     )
 
+//    LaunchedEffect(key1 = Unit) {
+//        viewModel.fetchProductCount()
+//    }
+
     Content(
         productImg = product,
-        productCount = uiState.value.productCount
+        productCount = uiState.value.productCount,
+//        addProductToCart = viewModel::addProductToCart
     )
 
 }
@@ -91,7 +96,8 @@ fun ProductDetailScreen(
 @Composable
 fun Content(
     productImg : List<Int>,
-    productCount : Int
+    productCount : Int,
+//    addProductToCart: (id: String, productImg: Int, productName: String, productPrice: String, productQuantity: Int) -> Unit,
 ){
     val (expanded, onExpand) = remember { mutableStateOf(false) }
     var selectedImage by remember {
@@ -226,11 +232,10 @@ fun Content(
                             .height(AppDim.LOGIN_MEDIA_ICON_SIZE),
                         onClick = {
 //                            addProductToCart(
-//                                id.toString(),
-//                                productImg.first()!!,
+//                                "1",
+//                                productImg.first(),
 //                                "Product Name", //cambiar
 //                                "200", //cambiar
-//                                models[1].toString(), //cambiar
 //                                quantity[quantityModelIndex - 1]
 //                            )
                         },

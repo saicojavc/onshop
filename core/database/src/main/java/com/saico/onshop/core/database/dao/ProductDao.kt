@@ -1,5 +1,6 @@
 package com.saico.onshop.core.database.dao
 
+import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Query
 import androidx.room.Update
@@ -9,6 +10,7 @@ import com.saico.onshop.core.database.util.PRODUCT_ID
 import com.saico.onshop.core.database.util.PRODUCT_TABLE
 import kotlinx.coroutines.flow.Flow
 
+@Dao
 interface ProductDao {
 
     @Upsert

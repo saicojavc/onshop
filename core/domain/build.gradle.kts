@@ -37,7 +37,7 @@ android {
 dependencies {
 
     //Modules
-    implementation(project(":app"))
+//    implementation(project(":app"))
     implementation (project(":core:common"))
     implementation (project(":core:model"))
 

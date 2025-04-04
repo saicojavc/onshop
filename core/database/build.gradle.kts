@@ -1,22 +1,44 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-parcelize")
-    alias(libs.plugins.com.dagger.hilt)
     id("com.google.devtools.ksp")
+    id("kotlin-parcelize")
 }
+
 
 android {
     namespace = "com.saico.onshop.core.database"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
+        minSdk = libs.versions.minSdk.get().toInt()
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
+
         javaCompileOptions {
             annotationProcessorOptions {
                 //for export database schemas
                 arguments += mapOf("room.schemaLocation" to "$projectDir/schemas")
             }
         }
+    }
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        isCoreLibraryDesugaringEnabled = true
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 }
 
@@ -26,24 +48,18 @@ dependencies {
     implementation(project(":core:domain"))
     implementation(project(":core:model"))
 
-//Database
-    implementation(libs.bundles.androidx.room)
-    implementation(libs.transport.runtime)
-    ksp(libs.androidx.room.compiler)
-    annotationProcessor(libs.androidx.room.compiler)
-    annotationProcessor(libs.hilt.compiler)
-    implementation(libs.androidx.datastore.core.android)
-    implementation(libs.androidx.datastore.preferences.core.jvm)
-    implementation(libs.androidx.datastore.preferences)
+    //Core
     implementation(libs.androidx.core.ktx)
-    implementation(libs.hilt.android)
-//    implementation(libs.androidx.appcompat)
-//    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-//    androidTestImplementation(libs.androidx.espresso.core)
-}
-// Habilitar el procesamiento de símbolos
-ksp {
-    arg("dagger.hilt.android.internal.disableAndroidSuperclassValidation", "true")
+    coreLibraryDesugaring(libs.com.android.tools.desugar)
+
+    //Room
+    implementation(libs.bundles.android.room)
+    ksp(libs.androidx.room.compiler)
+
+    //Coroutines
+    implementation(libs.org.jetbrains.kotlin.coroutines.android)
+
+    //Hilt
+    implementation(libs.com.google.dagger.hilt.android)
+    ksp(libs.com.google.dagger.hilt.compiler)
 }

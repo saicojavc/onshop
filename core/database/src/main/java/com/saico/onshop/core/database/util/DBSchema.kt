@@ -1,7 +1,7 @@
 package com.saico.onshop.core.database.util
 
 const val DB_NAME = "data.db"
-const val DB_VERSION = 1
+const val DB_VERSION = 2
 
 //Table
 const val PRODUCT_TABLE = "product"
