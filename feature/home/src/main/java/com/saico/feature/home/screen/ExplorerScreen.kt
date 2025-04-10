@@ -27,6 +27,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.navigation.NavHostController
+import com.saico.feature.home.model.product.Product
 import com.saico.onshop.ui.R
 import com.saico.onshop.ui.components.OSCard
 import com.saico.onshop.ui.components.OSIcon
@@ -43,36 +44,22 @@ fun ExplorerScreen(
     modifier: Modifier,
     navController: NavHostController,
 ) {
-    Content(navController = navController)
+
+    val product = Product()
+
+    Content(
+        navController = navController,
+        product = product
+    )
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun Content(navController: NavHostController,) {
+fun Content(
+    navController: NavHostController,
+    product: Product
+    ) {
 
-
-    val brandList = listOf(
-        R.drawable.cat1,
-        R.drawable.cat2,
-        R.drawable.cat3,
-        R.drawable.cat4,
-        R.drawable.cat5,
-        R.drawable.cat6,
-    )
-    val manList = listOf(
-        R.drawable.men1_1,
-        R.drawable.men2,
-        R.drawable.men3,
-        R.drawable.men4,
-        R.drawable.men5,
-        R.drawable.men6,
-        R.drawable.men7,
-        R.drawable.men8,
-        R.drawable.men9,
-    )
-    val brandText = listOf(
-        "Adidas", "Nike", "Puma", "ZARA", "Gucci", "Prada"
-    )
     val item = listOf(
         R.drawable.banner0,
         R.drawable.banner1,
@@ -143,7 +130,7 @@ fun Content(navController: NavHostController,) {
                         horizontalArrangement = Arrangement.SpaceBetween,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        items(brandList.zip(brandText)) { (image, name) ->
+                        items(product.brandList.zip(product.brandText)) { (image, name) ->
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally,
                                 modifier = Modifier.padding(PaddingDim.MEDIUM)
@@ -193,7 +180,7 @@ fun Content(navController: NavHostController,) {
                         verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.SpaceBetween
                     ) {
-                        items(manList) { item ->
+                        items(product.manList) { item ->
                             Column {
                                 OSCard(
                                     modifier = Modifier

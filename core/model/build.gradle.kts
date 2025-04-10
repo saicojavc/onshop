@@ -33,6 +33,7 @@ android {
 }
 
 dependencies {
+//    implementation(project(":core:ui"))
     implementation(libs.androidx.core.ktx)
     testImplementation(libs.junit)
     coreLibraryDesugaring(libs.com.android.tools.desugar)

@@ -141,7 +141,8 @@ fun Content( navController: NavHostController,){
                 }
                 BottomAppBarItem.MYORDER -> {
                     MyOrderScreen(
-                        modifier = Modifier.padding(paddingValues)
+                        modifier = Modifier.padding(paddingValues),
+                        navController = navController
                     )
                 }
                 BottomAppBarItem.PROFILE -> {
