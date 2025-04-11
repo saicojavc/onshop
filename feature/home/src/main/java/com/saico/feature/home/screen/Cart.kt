@@ -16,7 +16,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Delete
-import androidx.compose.material3.Badge
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -38,9 +37,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import com.saico.onshop.ui.components.OSText
-import com.saico.onshop.ui.components.OSTooltipIcon
 import com.saico.onshop.ui.components.OSTopAppBar
-import com.saico.onshop.ui.components.icon.OSIcons
 import com.saico.onshop.ui.theme.FontSizes
 import com.saico.onshop.ui.theme.PaddingDim
 
@@ -60,6 +57,8 @@ topBar = {
         title = {
             Text("Shopping Cart")
         },
+        modifier = Modifier
+            .fillMaxWidth()
     )
 }
     ) { paddingValues ->

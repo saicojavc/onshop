@@ -21,9 +21,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.ShoppingCart
-import androidx.compose.material.icons.rounded.Star
 import androidx.compose.material3.Badge
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -55,11 +52,9 @@ import com.saico.onshop.ui.components.OSCard
 import com.saico.onshop.ui.components.OSDropDownMenu
 import com.saico.onshop.ui.components.OSText
 import com.saico.onshop.ui.components.OSTooltipIcon
-import com.saico.onshop.ui.components.OSTooltipIconButton
 import com.saico.onshop.ui.components.OSTopAppBar
 import com.saico.onshop.ui.components.icon.OSIcons
 import com.saico.onshop.ui.theme.AppDim
-import com.saico.onshop.ui.theme.CornerDim
 import com.saico.onshop.ui.theme.FontSizes
 import com.saico.onshop.ui.theme.PaddingDim
 import kotlinx.coroutines.delay
@@ -125,6 +120,9 @@ fun Content(
                 title = {
                     Text("Product Detail")
                 },
+                modifier = Modifier
+                    .fillMaxWidth(),
+
                 actions = {
                     Box (
                         modifier = Modifier
