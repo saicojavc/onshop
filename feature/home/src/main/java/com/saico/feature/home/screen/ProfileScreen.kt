@@ -37,7 +37,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import com.saico.feature.home.model.BodyItem
-import com.saico.onshop.ui.components.OSTopAppBar
 import com.saico.onshop.ui.theme.AppDim
 import com.saico.onshop.ui.R
 import com.saico.onshop.ui.components.OSIcon

@@ -25,6 +25,10 @@
     <string name="greeting_4">Gusto de verte</string>
     <string name="greeting_5">Hola, bienvenido de vuelta</string>
 
+    <string name="explore">Explorar</string>
+    <string name="myorder">Mi Orden</string>
+    <string name="profile">Perfil</string>
+    <string name="buy_now">Comprar Ahora</string>
     <string name="email">Correo Electrónico</string>
     <string name="password">Contraseña</string>
     <string name="forgot_pass">¿Ha olvidado su contraseña?</string>

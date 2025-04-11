@@ -3,9 +3,7 @@ package com.saico.onshop.activity
 import androidx.lifecycle.ViewModel
 import com.saico.login.model.LoginUIState
 import com.saico.onshop.model.sigin.SignInResult
-import com.saico.onshop.ui.navigation.NavigationCommand
 import com.saico.onshop.ui.navigation.Navigator
-import com.saico.onshop.ui.navigation.routes.home.HomeRoute
 import com.saico.onshop.ui.navigation.routes.login.LoginRoute
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

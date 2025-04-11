@@ -9,12 +9,9 @@ import androidx.activity.compose.setContent
 import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -22,8 +19,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavHostController
@@ -63,8 +58,6 @@ class MainActivity : ComponentActivity() {
 //        enableEdgeToEdge()
         setContent {
             var showSplashScreen by remember { mutableStateOf(true) }
-            val systemTheme = isSystemInDarkTheme()
-            val context = LocalContext.current
 
             LaunchedEffect(Unit) {
                 delay(3000) // Espera 3 segundos
@@ -127,7 +120,7 @@ class MainActivity : ComponentActivity() {
 
                     LaunchedEffect(Unit) {
                         while (true) {
-                            println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+
                             if (viewModel.uiState.value.isSignInSuccessful) {
                                 navController.navigate(HomeRoute.HomeScreenRoute.route) {
                                     popUpTo(0) // Elimina el historial de navegación para evitar volver al login

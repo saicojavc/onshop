@@ -32,6 +32,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -40,6 +41,7 @@ import com.saico.onshop.ui.components.OSText
 import com.saico.onshop.ui.components.OSTopAppBar
 import com.saico.onshop.ui.theme.FontSizes
 import com.saico.onshop.ui.theme.PaddingDim
+import com.saico.onshop.ui.R
 
 @Composable
 fun CartScreen(
@@ -101,7 +103,7 @@ fun CartList() {
                 colors = ButtonDefaults.buttonColors(contentColor = MaterialTheme.colorScheme.primary)
             ) {
                 OSText(
-                    text = "Buy Now",
+                    text = stringResource(id = R.string.buy_now),
                     color = Color.White
                 )
             }
